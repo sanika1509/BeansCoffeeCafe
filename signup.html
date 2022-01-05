@@ -1,0 +1,164 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <!--jQuery library--> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--Latest compiled and minified JavaScript--> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+         <title>Registration_form</title>
+        <script>
+            
+                       function calls()
+            {
+                var x=document.getElementById("blocks")
+                 x.style.backgroundColor="rgba(255,255,255,0.3)"
+                x.style.transform="scale(1.10)";
+                x.style.color="black"
+                   }
+               function retrieves()
+            {
+                var x=document.getElementById("blocks")
+                 x.style.backgroundColor="rgba(0,0,0,0.5)"
+                 x.style.transform="scale(1.00)";
+               }
+            
+                  function check()
+         {
+             var name=window.document.forms.signup.firstname.value
+             reg=/[\W\d^_ ]/
+             if(reg.test(name))
+             {
+                 
+                window.document.forms.signup.firstname.style='background-color:rgba(255,50,40,0.2); color:white;'
+                 
+             }
+             else
+             {
+                window.document.forms.signup.firstname.style='background-color:rgba(45,255,50,0.2); color:white;'
+
+             }
+         }
+         function checkmobile()
+         {
+             var mono=window.document.forms.signup.mobile.value
+             reg=/\D/
+             if(reg.test(mono))
+             {
+                 window.document.forms.signup.mobile.style='background-color:rgba(255,50,40,0.2); color:white;'
+                 
+             }
+             if(mono.toString().length!=10)
+                 {
+                window.document.forms.signup.mobile.style='background-color:rgba(255,50,40,0.2); color:white;'
+                 }
+             else
+             {
+                window.document.forms.signup.mobile.style='background-color:rgba(45,255,50,0.2); color:white;'
+
+             }
+         }
+
+    function checkmail()
+            {
+                var mail=window.document.forms.signup.email.value 
+                reg=/^[A-Za-z0-9]{3,}@[A-Za-z]{3,}[.]{1}[a-zA-Z.]{2,6}$/
+          if(reg.test(mail))
+          {
+            window.document.forms.signup.email.style='background-color:rgba(45,255,50,0.2); color:white;'
+          }
+          else
+            {
+            window.document.forms.signup.email.style='background-color:rgba(255,50,40,0.2); color:white;'
+
+            }
+            }
+
+         function checkpass()
+         {
+             var password=window.document.forms.signup.password.value
+             reg=/\w{8,}/
+             if(reg.test(password))
+             {
+                 window.document.forms.signup.password.style='background-color:rgba(45,255,50,0.2); color:white;'
+ 
+             }
+            else
+             {
+                 window.document.forms.signup.password.style='background-color:rgba(255,50,40,0.2); color:white;'
+                
+             }
+         }
+        </script>
+        <style>
+            body
+            {
+                background-image: url("images/blog-3.jpeg");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                color:white;
+            }
+            .back
+            {
+                background-color: rgba(0,0,0,0.7);
+                color: rgba(255,255,255,0.4);
+                margin-top: 5%;
+                margin-bottom: 5%;
+                padding: 5%;
+               
+            }
+           .form-control
+           {
+               background-color: rgba(255, 255, 255, 0.6);
+           }
+           h2{
+               color:white;
+           }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="col-sm-6 col-sm-offset-3  back" id="blocks" onmouseover="calls()" onmouseout="retrieves()">
+                <div class="text-center">
+                    <h2>Customer Registration Form</h2>
+                    <br>
+                </div>
+                <div>
+                <form name="signup">
+                    <div class="form-group">
+                      First Name:
+                      <input type="text" name="firstname" class="form-control" placeholder="Enter your first name" onchange="check()" >
+                    </div>
+                    <div class="form-group">
+                        Last Name:
+                        <input type="text" name="last_name" class="form-control" placeholder="Enter your last name" >
+                    </div>
+                    <div class="form-group">
+                        Email:
+                        <input type="email" name="email" class="form-control" placeholder="Enter your email" onchange="checkmail()" >
+                    </div>
+                    <div class="form-group">
+                        Mobile:
+                        <input type="number" name="mobile" class="form-control" placeholder="Only 10 digits are allowed" onchange="checkmobile()" >
+                    </div>
+                   
+                     <div class="form-group">
+                     Address:
+                         <textarea class="form-control" placeholder="Enter your address" ></textarea>
+                    </div>
+                     
+                                       
+                    <div class="form-group">
+                        Password:
+                        <input type="password" name="password" class="form-control" onchange="checkpass()">
+                    </div>
+                    <div class="form-group">
+                        
+                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                        <br>
+                    </div>
+                    </form>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>

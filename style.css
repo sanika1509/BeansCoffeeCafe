@@ -1,0 +1,114 @@
+    h5{
+                color: white;
+            }
+            m3{
+                margin: 0;
+                paadding:0;
+            }
+            body{
+                background-color:rgba(0,0,0,0.9);
+                
+            }
+            .background
+            {
+                margin: 6%;
+                color: rgb(255,255,255);
+                border:2px aliceblue;
+               
+              
+                padding: 5%;
+            }
+            h1{
+                font-size: 60px;
+                color:white;
+            }
+          
+            p{
+                font-size: 28px;
+                color: rgba(255,255,255,0.7);
+            }
+            
+            .back
+            {
+                width:100%;
+                height:auto;
+                background-image: url("images/c1.jpg");
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                margin:0;
+                margin-top: 10%;
+            }
+            .text
+            {
+               
+            }
+           
+            .btn{
+                background-color: goldenrod;
+                font-size:20px;
+                color: white;
+            }
+            ul{
+                font-size: 24px;
+                float:right;
+                
+            }
+           
+            .p2{
+                background-color: rgba(255,255,255,0.1);
+                color: white;
+                padding-bottom: 3%;
+                padding-top: 3%;
+            }
+            .lmargin
+            {
+                margin-left: 8%;
+                color:white;
+            }
+             .lmar
+            {
+                margin-left: 4%;
+                color:white;
+            }
+            
+            .space{
+                margin:3%;
+                margin-top: 2%;
+                padding:5%;
+                border: 1px white solid;
+              
+               
+            }
+            .stcolor{
+                color: goldenrod;
+               
+            }
+            .text{
+                color:white;
+            }
+            .form-control
+            {
+                background-color: rgba(0,0,0,0.5);
+                padding: 2%;
+                font-size: 15px;
+            }
+            input{
+                background-color: rgba(0,0,0,0.5);
+                border: 0px;
+                color: white;
+                padding: 5%;
+            }
+            .inpt{
+                padding: 2%;
+            }
+            .blg
+            {
+                border: 1px white solid;
+                padding: 2%;
+                 margin-top: 2%;
+            }
+            .borders{
+                padding: 0px;
+                
+            }
+           

@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <!--jQuery Javascript library--> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--Latest compiled and minified JavaScript--> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+         <link rel="stylesheet" type="text/css" href="style.css">
+        <script>
+            function info()
+            {
+                var uname=prompt('Enter your name :','')
+                if(uname==null)
+                {}
+                else
+                {
+                alert('Hiii.... '+uname)
+                }
+                window.document.cookie="Customer name:"+uname+";"
+            }
+            function cookieread()
+            {
+                username=window.document.cookie
+                return username
+            }
+            function setText()
+            {
+                window.document.forms.select.button1.value="G e t  Y o u r s"
+            }
+            function getText()
+            {
+                window.document.forms.select.button1.value="Get Yours"
+            }
+            function setTextL()
+            {
+                window.document.forms.selecta.buttona.value="L e a r n  M o r e "
+            }
+            function getTextL()
+            {
+                window.document.forms.selecta.buttona.value="Learn More"
+            }
+            function setTextM1()
+            {
+                window.document.forms.selectm1.menub1.value="A d d  T o  C a r t  "
+            } 
+            function getTextM1()
+            {
+                window.document.forms.selectm1.menub1.value="Add To Cart "
+            }
+            function setTextM2()
+            {
+                window.document.forms.selectm2.menub2.value="A d d  T o  C a r t  "
+            } 
+            function getTextM2()
+            {
+                window.document.forms.selectm2.menub2.value="Add To Cart "
+            }
+            function setTextM3()
+            {
+                window.document.forms.selectm3.menub3.value="A d d  T o  C a r t  "
+            } 
+            function getTextM3()
+            {
+                window.document.forms.selectm3.menub3.value="Add To Cart "
+            }
+            function setTextM4()
+            {
+                window.document.forms.selectm4.menub4.value="A d d  T o  C a r t  "
+            } 
+            function getTextM4()
+            {
+                window.document.forms.selectm4.menub4.value="Add To Cart "
+            }
+            function setTextM5()
+            {
+                window.document.forms.selectm5.menub5.value="A d d  T o  C a r t  "
+            } 
+            function getTextM5()
+            {
+                window.document.forms.selectm5.menub5.value="Add To Cart "
+            }
+            function setTextM6()
+            {
+                window.document.forms.selectm6.menub6.value="A d d  T o  C a r t  "
+            } 
+            function getTextM6()
+            {
+                window.document.forms.selectm6.menub6.value="Add To Cart "
+            }
+           function changec(menuid)
+           {
+                if(menuid==1)
+              {
+             var x = document.getElementById("block1");   
+             x.style.backgroundColor = "white";  
+             x.style.color = "black";
+              }
+             if(menuid==2)
+              {
+             var x = document.getElementById("block2");   
+             x.style.backgroundColor = "white";  
+             x.style.color = "black";
+              }
+              if(menuid==3)
+              {
+             var x = document.getElementById("block3");   
+             x.style.backgroundColor = "white";  
+             x.style.color = "black";
+              }
+          if(menuid==4)
+              {
+             var x = document.getElementById("block4");   
+             x.style.backgroundColor = "white";  
+             x.style.color = "black";
+              } 
+            if(menuid==5)
+              {
+             var x = document.getElementById("block5");   
+             x.style.backgroundColor = "white";  
+             x.style.color = "black";
+              }
+          if(menuid==6)
+              {
+             var x = document.getElementById("block6");   
+              x.style.backgroundColor = "white";  
+             x.style.color = "black";
+              }
+            
+           }
+            function release(menuid)
+           {
+               if(menuid==1)
+               {
+            var x = document.getElementById("block1");   
+            x.style.backgroundColor = "black";  
+            x.style.color = "white";  
+            }
+            if(menuid==2)
+               {
+            var x = document.getElementById("block2");   
+            x.style.backgroundColor = "black";  
+            x.style.color = "white"; 
+        }
+            if(menuid==3)
+               {
+            var x = document.getElementById("block3");   
+            x.style.backgroundColor = "black";  
+            x.style.color = "white"; 
+        }
+            if(menuid==4)
+               {
+            var x = document.getElementById("block4");   
+            x.style.backgroundColor = "black";  
+            x.style.color = "white"; 
+        }
+            if(menuid==5)
+               {
+            var x = document.getElementById("block5");   
+            x.style.backgroundColor = "black";  
+            x.style.color = "white"; 
+        }
+            if(menuid==6)
+               {
+            var x = document.getElementById("block6");   
+            x.style.backgroundColor = "black";  
+            x.style.color = "white"; 
+            }
+            
+           }
+            function check()
+         {
+             var name=window.document.forms.contacts.nme.value
+             reg=/[\W\d^_ ]/
+             if(reg.test(name))
+             {
+                 
+                window.document.forms.contacts.nme.style='background-color:rgba(255,50,40,0.2); color:white;'
+                 
+             }
+             else
+             {
+                window.document.forms.contacts.nme.style='background-color:rgba(45,255,50,0.2); color:white;'
+
+             }
+         }
+           
+            function checkmail()
+            {
+                var mail=window.document.forms.contacts.emailid.value 
+                reg=/^[A-Za-z0-9]{3,}@[A-Za-z]{3,}[.]{1}[a-zA-Z.]{2,6}$/
+          if(reg.test(mail))
+          {
+           window.document.forms.contacts.emailid.style='background-color:rgba(45,255,50,0.2); color:white;'
+          }
+          else
+            {
+            window.document.forms.contacts.emailid.style='background-color:rgba(255,50,40,0.2); color:white;'
+
+            }
+            }      
+               function checkmobile()
+            {
+             var mono=window.document.forms.contacts.mobileno.value
+             reg=/\D/
+             if(reg.test(mono))
+             {
+                 window.document.forms.contacts.mobileno.style='background-color:rgba(255,50,40,0.2); color:white;'
+                 
+             }
+             if(mono.toString().length!=10)
+                 {
+               window.document.forms.contacts.mobileno.style='background-color:rgba(255,50,40,0.2); color:white;'
+                 }
+             else
+             {
+                window.document.forms.contacts.mobileno.style='background-color:rgba(45,255,50,0.2); color:white;'
+
+             }
+         }
+         
+         function increase(bg)
+         {
+              if(bg==1)
+               {
+                   document.getElementById("bl1").style.transform="scale(1.10)";
+          
+            }
+            if(bg==2)
+               {
+             document.getElementById("bl2").style.transform="scale(1.10)";
+          
+            }
+            if(bg==3)
+               {
+             document.getElementById("bl3").style.transform="scale(1.10)";
+          
+            }
+
+         }
+         function decrease(bg)
+         {
+              if(bg==1)
+               {
+              document.getElementById("bl1").style.transform="scale(1.0)";
+            }
+            if(bg==2){
+              document.getElementById("bl2").style.transform="scale(1.0)";
+            }
+            if(bg==3)
+               {
+            document.getElementById("bl3").style.transform="scale(1.0)";
+            }
+         
+         }
+           function newwindow(a)
+           {
+              var mywindow=window.open(a,'','width=200,height=200,top=700,left=1310')
+              
+              
+           }
+           function cartopen()
+           {
+               var mywincart=window.open('cart.html','','width=300,height=300,top=50,left=1310')
+             
+           }
+        </script>
+    </head>
+    <body onload="info(), ShowBanners()" class="container-fuid">
+          <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <li><a href="index.html" class="navbar-brand"><img src="quote-img.png"></a></li>
+                </div>
+                
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class=""></span>Home</a></li>
+                        <li><a href="login.html"><span class=""></span>Login</a></li>
+                         <li><a href="signup.html"><span class=""></span>Sign Up</a></li>
+                        
+                        <li><a href="#abt"><span class=""></span>About</a></li>
+                        <li><a href="#menu"><span class=""></span>Menu</a></li>
+                        <li><a href="#ourproduct"><span class=""></span>Products</a></li>
+                         <li><a href="#custreview"><span class=""></span>Review</a></li>
+                        <li><a href="#contactus"><span class=""></span>Contact</a></li>
+                        <li><a href="#blogs"><span class=""></span>Blogs</a></li>
+                        <li><a onclick="cartopen()"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+            
+        </nav>
+        <div class=" back background">
+            <div class="text">
+            <h1>FRESH COFFEE IN   <br>  THE MORNING</h1>
+            <p>Lorem Ipsum, Dolor Sit Amet<br> Consectetur Adipisicing Elit. <br>Placeat Labore, Sint Cupiditate Distinctio<br> Tempora Reiciendis.</p><br><br>
+            <form name="select">
+            <input type="button" name="button1" value="Get Yours" class="btn" onmouseout="getText()" onmouseover="setText()"/>
+            </form>
+            </div>
+        </div>
+    <marquee class="text">Offer Offer...!</marquee>
+        <div id="abt">
+            
+            <div class="row">
+                <div class="lmargin">
+                    <br><br>
+                <center><h1>About Us</h1></center>
+                </div>
+               
+                <div class="col-sm-4 col-sm-offset-1">
+                    <center><img src="images/about-img.jpg" class="img-responsive" style="padding: 10%; margin-top:20%;"></center>
+                </div>
+                <div class="col-sm-5 col-sm-offset-1 lmar">
+                    <h2>What Makes Our Coffee Special?</h2>
+                    <br>
+                    <h5>
+                        Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Voluptatibus Qui Ea 
+                        <br><br>
+                        Ullam, Enim Tempora Ipsum Fuga Alias Quae Ratione A Officiis Id Temporibus Autem? 
+                        <br><br>
+                        Quod Nemo Facilis Cupiditate. Ex, Vel?
+                        <br><br>
+                        Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Odit Amet Enim Quod Veritatis, 
+                        <br><br>
+                        Nihil Voluptas Culpa! Neque Consectetur Obcaecati Sapiente?<br>
+                        <br><br>
+                    </h5>
+                          <form name="selecta">
+            <input type="button" name="buttona" value="Learn More" class="btn" onmouseout="getTextL()" onmouseover="setTextL()"/>
+            </form>
+
+                </div>
+            </div>
+        </div>
+        
+         
+              <div id="menu">
+                   <div class="lmargin">
+              <div class="row mt5">
+                  <br><br>
+            <center><h1>Our Menu</h1></center>
+              </div>
+            <div class="row">
+               
+                    <div id="block1" class=" col-sm-6 col-sm-offset-3 col-sm-3 space " onmouseover="changec(1)" onmouseout="release(1)">
+                       <center>
+                    <img src="images/menu-1.png" class="img-responsive">
+                    <h3>Tasty And Healty</h3>
+                    <h4>$15.99 <strike>20.99</strike></h4>
+                    <br>
+                    <form name="selectm1">
+                    <input type="submit" class="btn" name="menub1" value="Add To Cart" onmouseout="getTextM1()" onmouseover="setTextM1()">
+                    </form>
+
+                       </center>
+                   </div>
+                     <div id="block2" class=" col-sm-6 col-sm-offset-3  col-sm-3 space" onmouseover="changec(2)" onmouseout="release(2)">
+                       <center>
+                    <img src="images/menu-2.png" class="img-responsive">
+                    <h3>Tasty And Healty</h3>
+                    <h4>$15.99 <strike>20.99</strike></h4>
+                    <br>
+                    <form name="selectm2">
+                    <input type="submit" class="btn" name="menub2" value="Add To Cart" onmouseout="getTextM2()" onmouseover="setTextM2()">
+                    </form>
+                       </center>
+                   </div>                  
+                    <div id="block3" class=" col-sm-6 col-sm-offset-3 col-sm-3 space" onmouseover="changec(3)" onmouseout="release(3)">
+                       <center>
+                    <img src="images/menu-3.png" class="img-responsive">
+                    <h3>Tasty And Healty</h3>
+                    <h4>$15.99 <strike>20.99</strike></h4>
+                     <br>
+                    <form name="selectm3">
+                    <input type="submit" class="btn" name="menub3" value="Add To Cart" onmouseout="getTextM3()" onmouseover="setTextM3()">
+                    </form>                       </center>
+                   </div>
+                       <div id="block4" class=" col-sm-6 col-sm-offset-3  col-sm-3 space" onmouseover="changec(4)" onmouseout="release(4)">
+                       <center>
+                    <img src="images/menu-4.png" class="img-responsive">
+                    <h3>Tasty And Healty</h3>
+                    <h4>$15.99 <strike>20.99</strike></h4>
+                     <br>
+                    <form name="selectm4">
+                    <input type="submit" class="btn" name="menub4" value="Add To Cart" onmouseout="getTextM4()" onmouseover="setTextM4()">
+                    </form>
+                       </center>
+                   </div>
+                    <div id="block5" class=" col-sm-6 col-sm-offset-3  col-sm-3 space" onmouseover="changec(5)" onmouseout="release(5)">
+                       <center>
+                    <img src="images/menu-5.png" class="img-responsive">
+                    <h3>Tasty And Healty</h3>
+                    <h4>$15.99 <strike>20.99</strike></h4>
+                     <br>
+                    <form name="selectm5">
+                    <input type="submit" class="btn" name="menub5" value="Add To Cart" onmouseout="getTextM5()" onmouseover="setTextM5()">
+                    </form>
+                       </center>
+                   </div>
+                    <div id="block6" class=" col-sm-6 col-sm-offset-3  col-sm-3 space" onmouseover="changec(6)" onmouseout="release(6)">
+                       <center>
+                    <img src="images/menu-6.png" class="img-responsive">
+                    <h3>Tasty And Healty</h3>
+                    <h4>$15.99 <strike>20.99</strike></h4>
+                    <br>
+                    <form name="selectm6">
+                    <input type="submit" class="btn" name="menub6" value="Add To Cart" onmouseout="getTextM6()" onmouseover="setTextM6()">
+                    </form> 
+                       </center>
+                   </div>                </div>
+            </div>
+        </div>
+        
+        <div id="ourproduct">
+            <div class="lmargin">
+            <div class="row">
+                <br><br>
+                <center><h1>Our Products</h1></center>
+            </div>
+            <div class="row">
+               <div class=" col-sm-6 col-sm-offset-4  col-sm-3 space">
+                       <center>
+                    <img src="images/product-1.png" class="img-responsive">
+                    <h3>Fresh Coffee</h3>
+                    <span class="stcolor glyphicon glyphicon-star"></span>
+                    <span class="stcolor glyphicon glyphicon-star"></span>
+                    <span class="stcolor glyphicon glyphicon-star"></span>
+                    <span class="stcolor glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                    <h4>$15.99 <strike>20.99</strike></h4>
+                     <br>
+               
+                       </center>
+                   </div> 
+          
+                
+                 
+               <div class=" col-sm-6 col-sm-offset-4  col-sm-3 space">
+                       <center>
+                    <img src="images/product-2.png" class="img-responsive">
+                    <h3>Fresh Coffee</h3>
+                    <span class="stcolor glyphicon glyphicon-star"></span>
+                    <span class="stcolor glyphicon glyphicon-star"></span>
+                    <span class="stcolor glyphicon glyphicon-star"></span>
+                    <span class="stcolor glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                    <h4>$15.99 <strike>20.99</strike></h4>
+                    
+                     <br>
+               
+                       </center>
+                   </div> 
+           
+               
+                
+               <div class=" col-sm-6 col-sm-offset-4  col-sm-3 space">
+                       <center>
+                    <img src="images/product-3.png" class="img-responsive">
+                    <h3>Fresh Coffee</h3>
+                    <span class="stcolor glyphicon glyphicon-star"></span>
+                    <span class="stcolor glyphicon glyphicon-star"></span>
+                    <span class="stcolor glyphicon glyphicon-star"></span>
+                    <span class="stcolor glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                    <h4>$15.99 <strike>20.99</strike></h4>
+                     <br>
+               
+                       </center>
+                   </div> 
+          
+            </div>
+        </div>
+        </div>
+        
+        <div id="custreview">
+            
+                <br><br>
+              <div class="row">
+            <center id="menu"><h1>Customer's Review</h1></center>
+            </div>
+                <div class=" row">
+                      
+                  
+   
+    <hr>
+<center>
+<img src="img_snowtops.jpg" width="900" height="400" name="ChangeBanner" />
+</center>
+                </div>
+           
+        
+        </div>
+    
+<script language="Javascript">
+    MyBanners=new Array('images/r1.png','images/r2.png','images/r3.png')
+banner=0
+function ShowBanners()
+{
+    if (document.images)
+{ 
+banner++
+if (banner==MyBanners.length)
+{
+banner=0
+}
+document.ChangeBanner.src=MyBanners[banner]
+setTimeout("ShowBanners()",3000)
+}
+}
+</script>
+
+       
+        
+                <div id="contactus">
+            <div class="row lmargin">
+                <br><br>
+              <div class="row">
+            <center id="menu"><h1>Contact Us</h1></center>
+            </div>
+                <div class="row">
+                   
+                       <div class=" col-sm-5 col-sm-offset-1  borders">
+                           <img src="images/contact us.jpg"  style="margin-top:30%;margin-bottom:25%;"  class="img-responsive">
+                   </div> 
+                    <div class=" col-sm-5 col-sm-offset-1 space text  ">
+                        <center><h2>Get In Touch</h2></center>
+                        <form name="contacts">
+                      <div class="inpt col-sm-10">
+                          <div> <span  class="glyphicon glyphicon-user"></span></div><br>
+                          <input type="text" name="nme" placeholder="Name" class="form-control" onchange="check()">
+                          <br>
+                      </div>
+                        <div class="inpt col-sm-10 ">
+                            <div> <span  class="glyphicon glyphicon-envelope"></span></div><br>
+                           <input type="email" name="emailid" placeholder="Email - ID" class="form-control" onchange="checkmail()">
+                            <br>
+                      </div>
+                        <div class="inpt col-sm-10">
+                            <div><span  class="glyphicon glyphicon-earphone"></span></div><br>
+                            <input type="number" name="mobileno" placeholder="Contact No" class="form-control" onchange="checkmobile()">
+                            <br>
+                      
+                    </div>
+                        </form>
+                   </div> 
+                </div>
+        </div>
+        </div>
+        
+        <div id="blogs">
+            <div class="lmar">
+                <br><br>
+                <div class="row">
+            <center><h1>Our Blog's </h1></center>
+            </div>
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-2  blg">
+                      
+                        <center><a onclick="newwindow('images/blog-1.jpeg')" title="Japan's Favourite Coffee"><img id="bl1" src="images/blog-1.jpeg" onmouseover="increase(1)" onmouseout="decrease(1)"></a></center>
+                        <center> <h2>Tasty And Refreshing Coffee</h2>
+                           <h3 class="stcolor">By SAVA / 15 th Sep, 2021</h3>
+                           <h4>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Non, Dicta.</h4>
+                        </center>
+                   </div> 
+                    <div class="col-md-4 col-md-offset-1 blg">
+                      
+                        <center><a onclick="newwindow('images/blog-2.jpeg')" title="Austalia's Favourite Coffee" ><img id="bl2" src="images/blog-2.jpeg" onmouseover="increase(2)" onmouseout="decrease(2)"></a></center>
+                        <center> <h2>Tasty And Refreshing Coffee</h2>
+                           <h3 class="stcolor">By SAVA / 15 th Sep, 2021</h3>
+                           <h4>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Non, Dicta.</h4>
+                        </center>
+                   </div> 
+                
+                    <center> <div class="col-md-4 col-md-offset-4 blg ">
+                      
+                        <center><a onclick="newwindow('images/blog-3.jpeg')" title="India's favourite coffee"><img id="bl3" src="images/blog-3.jpeg" onmouseover="increase(3)" onmouseout="decrease(3)"></a></center>
+                           <h2>Tasty And Refreshing Coffee</h2>
+                           <h3 class="stcolor">By SAVA / 15 th Sep, 2021</h3>
+                           <h4>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Non, Dicta.</h4>
+                      
+                   </div> 
+                    </center>
+                    </div>
+              
+                </div>
+            </div>
+        
+<footer>
+    <script>
+        var uname=cookieread();
+        window.document.write('Cookies :'+uname)
+        </script>
+</footer>
+    </body>
+</html>
